@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!112 &11200000
+InputActionAsset:
+  m_Name: PlayerControls
+  m_Actions:
+  - m_Name: Move
+    m_Type: Value
+    m_Id: move-action-id
+    m_ExpectedControlType: Vector2
+  - m_Name: Fire
+    m_Type: Button
+    m_Id: fire-action-id
+    m_ExpectedControlType: Button
+  m_Bindings:
+  - m_Name: 2D Vector Composite
+    m_Id: move-composite-id
+    m_Path: 2DVector
+    m_Action: Move
+    m_IsComposite: 1
+    m_Parts:
+    - m_Name: up
+      m_Id: up-part
+      m_Path: <Keyboard>/w
+    - m_Name: down
+      m_Id: down-part
+      m_Path: <Keyboard>/s
+    - m_Name: left
+      m_Id: left-part
+      m_Path: <Keyboard>/a
+    - m_Name: right
+      m_Id: right-part
+      m_Path: <Keyboard>/d
+  - m_Name: Mouse Left
+    m_Id: fire-mouse-id
+    m_Path: <Mouse>/leftButton
+    m_Action: Fire
+    m_IsComposite: 0
+    m_IsPartOfComposite: 0
